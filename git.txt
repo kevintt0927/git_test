@@ -17,6 +17,7 @@ git commit --amend -m 'xxx'                               # 合并上一次提�
 git commit -am 'xxx'                                      # 将add和commit合为一步
 git rm xxx                                                # 删除index中的文件
 git rm -r *                                               # 递归删除
+
 git log                                                   # 显示提交日志
 git log -1                                                # 显示1行日志 -n为n行
 git log -5
@@ -30,6 +31,7 @@ git tag                                                   # 显示已存在的ta
 git tag -a v2.0 -m 'xxx'                                  # 增加v2.0的tag
 git show v2.0                                             # 显示v2.0的日志及详细内容
 git log v2.0                                              # 显示v2.0的日志
+
 git diff                                                  # 显示所有未添加至index的变更
 git diff --cached                                         # 显示所有已添加index但还未commit的变更
 git diff HEAD^                                            # 比较与上一个版本的差异
