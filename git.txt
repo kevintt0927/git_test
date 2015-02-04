@@ -56,6 +56,7 @@ git checkout -b devel origin/develop                      # 从远程分支devel
 git checkout -- README                                    # 检出head版本的README文件（可用于修改错误回退）
 git merge origin/master                                   # 合并远程master分支至当前分支
 git cherry-pick ff44785404a8e                             # 合并提交ff44785404a8e的修改
+
 git push origin master                                    # 将当前分支push到远程master分支
 git push origin :hotfixes/BJVEP933                        # 删除远程仓库的hotfixes/BJVEP933分支
 git push --tags                                           # 把所有tag推送到远程仓库
@@ -74,6 +75,7 @@ git whatchanged                                           # 显示提交历史�
 git revert dfb02e6e4f2f7b573337763e5c0013802e392818       # 撤销提交dfb02e6e4f2f7b573337763e5c0013802e392818
 git ls-tree HEAD                                          # 内部命令：显示某个git对象
 git rev-parse v2.0                                        # 内部命令：显示某个ref对于的SHA1 HASH
+
 git reflog                                                # 显示所有提交，包括孤立节点
 git show HEAD@{5}
 git show master@{yesterday}                               # 显示master分支昨天的状态
